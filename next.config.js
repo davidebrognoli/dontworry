@@ -1,3 +1,5 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 const nextConfig = {
   webpack(config) {
     config.module.rules.push({
@@ -7,6 +9,10 @@ const nextConfig = {
     });
 
     return config;
+  },
+  assetPrefix: isProd ? '/your-github-repo-name/' : '',
+  images: {
+    unoptimized: true,
   },
 };
 
