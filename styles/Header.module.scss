@@ -1,0 +1,52 @@
+.header{
+  padding: 10px 20px;
+  background-color: #1e1e1e;
+}
+
+.container{
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.navigation {
+  margin-left: auto;
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  li {
+    margin-left: 20px
+  }
+
+  a {
+    color: #6e7373;
+
+    &:hover{
+      color: #a5b669;
+    }
+  }
+}
+
+.instagram {
+  margin-left: 20px;
+
+  svg {
+    fill: #6e7373;
+  }
+
+  &:hover{
+    svg{
+      fill: #a5b669;
+    }
+  }
+}
+
+

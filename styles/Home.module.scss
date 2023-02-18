@@ -1,0 +1,151 @@
+.heroContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #1e1e1e;
+}
+
+.hero{
+  flex: 1;
+  background-size: cover;
+  background-position: center center;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+}
+
+.section {
+  background-color: #1e1e1e;
+  padding-bottom: 50px;
+}
+
+.about {
+  composes: section;
+  margin-bottom: -200px;
+  padding-bottom: 0;
+}
+
+.box {
+  width: 95%;
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  background-color: #191919;
+  box-shadow: 10px 10px 100px rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  transform: translateY(-100%);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #FFF;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: #6e7373;
+    font-size: 20px;
+  }
+}
+
+.logo {
+  flex: 0 0 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sectionHead {
+  position: relative;
+  margin-bottom: 60px;
+  text-align: center;
+
+  h2{
+    padding-bottom: 10px;
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #878d8d;
+  }
+
+  h3{
+    font-size: 30px;
+    z-index: 1;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    font-weight: 700;
+    color: #FFF;
+
+    &:after{
+      background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), rgb(165, 165, 165), rgba(0, 0, 0, 0));
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      width: 100%;
+      content: "";
+      bottom: -30px;
+    }
+  }
+}
+
+.container{
+  max-width: 1140px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.workTogheter {
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 0;
+  text-align: center;
+  padding: 100px 0;
+  margin-bottom: 50px;
+}
+
+.useCases{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.useCase {
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.useCaseContent{
+  flex: 1;
+  padding: 20px;
+  background-color: #191919;
+
+  p {
+    color: #6e7373;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    margin-bottom: 20px;
+  }
+}
+
+.useCaseImg {
+  width: 100%;
+  padding-top: 100%;
+  background-size: cover;
+  background-position: center center;
+}
