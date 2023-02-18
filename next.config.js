@@ -10,7 +10,7 @@ const nextConfig = {
 
     return config;
   },
-  assetPrefix: isProd ? '/your-github-repo-name/' : '',
+  assetPrefix: isProd ? '/dontworry/' : '',
   images: {
     unoptimized: true,
   },
