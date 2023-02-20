@@ -32,6 +32,9 @@ export default function Home() {
         </section>
         <section className={styles.about}>
           <div className={styles.box}>
+            <div className={styles.logo}>
+              <Image src="logo-white.svg" width="200" height="100" alt="logo"></Image>
+            </div>
             <div className={styles.content}>
               <h1>I take care of you</h1>
               <p>
@@ -39,9 +42,6 @@ export default function Home() {
                 progetto. Rendiamo ogni vostro evento unico e speciale. Ci
                 prendiamo cura dei vostri progetti.
               </p>
-            </div>
-            <div className={styles.logo}>
-              <Image src="logo-white.svg" width="200" height="100" alt="logo"></Image>
             </div>
           </div>
         </section>

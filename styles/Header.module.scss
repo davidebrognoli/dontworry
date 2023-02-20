@@ -33,6 +33,16 @@
       color: #a5b669;
     }
   }
+
+  .menubar{
+    display: none;
+
+    svg {
+      fill: #6e7373;
+      width: 24px;
+      height: 24px;
+    }
+  }
 }
 
 .instagram {
@@ -45,6 +55,18 @@
   &:hover{
     svg{
       fill: #a5b669;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .navigation {
+    ul {
+      display: none; 
+    }
+
+    .menubar {
+      display: block;
     }
   }
 }

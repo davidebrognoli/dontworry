@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "../styles/Header.module.scss";
 
 import InstagramLogo from "../public/instagram.svg";
+import Menubar from "../public/burger-menu.svg";
 
 export default function Header() {
   return (
@@ -33,6 +34,9 @@ export default function Header() {
               <a href="#">Contatti</a>
             </li>
           </ul>
+          <div className={styles.menubar}>
+            <Menubar></Menubar>
+          </div>
         </nav>
         <a
           href="https://www.instagram.com/marina.brognoli/"
