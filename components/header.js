@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from 'next/link';
 import styles from "../styles/Header.module.scss";
 
 import InstagramLogo from "../public/instagram.svg";
@@ -19,7 +20,7 @@ export default function Header() {
         <nav className={styles.navigation}>
           <ul>
             <li>
-              <a href="#">Chi siamo</a>
+              <Link href="/chi-siamo">Chi siamo</Link>
             </li>
             <li>
               <a href="#">Eventi</a>
